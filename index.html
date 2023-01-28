@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="big-container">
+      <div class="title">B I L L <br />S P I L L</div>
+      <div class="container white-bg">
+        <div class="container-left white-bg">
+          <div class="bill">
+            <p class="f-14 dark-purple insconsolata normal">Bill</p>
+            <form>
+              <label
+                for="bill-amount"
+                class="grey-bg dark-purple semi-bold f-18"
+                >₹</label
+              >
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                placeholder="0"
+                class="grey-bg bill-input"
+              />
+            </form>
+          </div>
+          <div class="select-tip">
+            <p class="f-14 dark-purple insconsolata normal">Select Tip %</p>
+            <div class="button-box-1">
+              <button class="btn-tip btn-tip-5">5%</button>
+              <button class="btn-tip btn-tip-10">10%</button>
+              <button class="btn-tip btn-tip-15">15%</button>
+            </div>
+            <div class="button-box-2">
+              <button class="btn-tip btn-tip-25">25%</button>
+              <button class="btn-tip btn-tip-50">50%</button>
+              <button class="btn-tip btn-tip-75">75%</button>
+            </div>
+          </div>
+          <div class="number-of-people">
+            <p class="f-14 dark-purple insconsolata normal">Number Of People</p>
+            <div class="number-of-people-counter">
+              <div class="counter">
+                <button class="btn-counter btn-counter-plus">+</button>
+                <p class="f-18 semi-bold dark-purple mono counter-meter">0</p>
+                <button class="btn-counter btn-counter-minus">-</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-right dark-purple-bg">
+          <div class="tip-amount">
+            <div class="tip-amount-left f-14 light-grey normal insconsolata">
+              Tip Amount <br /><span
+                class="f-11 purple-grey normal insconsolata"
+                >per person</span
+              >
+            </div>
+            <div class="tip-amount-right f-35 mono purple-grey bold">
+              ₹ 0.00
+            </div>
+          </div>
+          <div class="total-amount">
+            <div class="total-amount-left f-14 light-grey normal insconsolata">
+              Total<br /><span class="f-11 purple-grey normal insconsolata"
+                >per person</span
+              >
+            </div>
+            <div class="total-amount-right f-35 mono purple-grey bold">
+              ₹ 0.00
+            </div>
+          </div>
+          <div class="generate">
+            <button class="btn-generate">GENERATE</button>
+          </div>
+          <div class="reset disabled">
+            <button class="btn-reset">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
